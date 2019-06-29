@@ -5,7 +5,6 @@ public class Warrior {
 	public int health = 0;
 	public int attkMax = 0;
 	public int blockMax = 0;
-	
 	public Warrior() {
 		
 	}
@@ -20,8 +19,6 @@ public class Warrior {
 	public int attack() {
 		return 1+(int)(Math.random()*((attkMax -1 )+1));
 	}
-	
-	
 	
 	public int blockMax() {
 		return 1+(int)(Math.random()*((blockMax -1 )+1));
