@@ -5,6 +5,9 @@ public class Warrior {
 	public int health = 0;
 	public int attkMax = 0;
 	public int blockMax = 0;
+	
+	public Teleports teleportType;
+	
 	public Warrior() {
 		
 	}
@@ -31,5 +34,14 @@ public class Warrior {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String teleport() {
+		return teleportType.teleport();
+	}
+	
+	public void setTeleportAbility(Teleports newTeleportType) {
+		teleportType = newTeleportType;
+		
+		
 	}
 }
