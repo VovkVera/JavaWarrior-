@@ -1,8 +1,8 @@
 package capability.org.ua;
-
 import java.util.Random;
 
 public class DodgeWarrior extends Warrior{
+	
 	double dodgePercent; 
 	Random rand = new Random();
 	
@@ -11,6 +11,7 @@ public class DodgeWarrior extends Warrior{
 			double dodgePercent) {
 		super(name, health, attakMax, blockMax);
 		this.dodgePercent = dodgePercent; 
+		CanTeleport teleportType  = new CanTeleport();
 	} 
 	public int block() {
 		double  chance = rand.nextDouble();
@@ -19,7 +20,6 @@ public class DodgeWarrior extends Warrior{
 			return 10000;
 		}else {
 			return 1+(int)(Math.random()*((blockMax -1 )+1));
-		}
-			
+		}			
 	}
 }
