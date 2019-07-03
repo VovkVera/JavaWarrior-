@@ -11,7 +11,7 @@ public class DodgeWarrior extends Warrior{
 			double dodgePercent) {
 		super(name, health, attakMax, blockMax);
 		this.dodgePercent = dodgePercent; 
-		CanTeleport teleportType  = new CanTeleport();
+		teleportType  = new CanTeleport();
 	} 
 	public int block() {
 		double  chance = rand.nextDouble();
