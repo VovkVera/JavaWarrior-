@@ -35,13 +35,12 @@ public class Warrior {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String teleport() {
 		return teleportType.teleport();
 	}
 	
 	public void setTeleportAbility(Teleports newTeleportType) {
 		teleportType = newTeleportType;
-		
-		
 	}
 }
